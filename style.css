@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "franklin", sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container__header {
+    font-size: 30px;
+    color: whitesmoke;
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form {
+    color: teal;
+    font-weight: bold;
+}
+
+.form__fieldset {
+    border-color: teal;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+}
+
+.form__labelText {
+    max-width: 200px;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form__legend {
+    font-size: 30px;
+    background-color: white;
+    font-family: "franklin", sans-serif;
+    text-align: center;
+    box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px teal, 21px 22px 40px 0px rgba(0, 0, 0, 0);
+    ;
+    padding: 10px;
+}
+
+.form__submit {
+    border: none;
+    background-color: teal;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 60px;
+    display: block;
+    margin: 10px auto;
+    font-size: 30px;
+}
+
+.paragraph {
+    margin: 20px 50px;
+}
