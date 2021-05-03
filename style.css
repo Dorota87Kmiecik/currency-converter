@@ -35,8 +35,13 @@ body {
 .form__fieldset {
     border-color: teal;
     text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px;
     padding: 100px 20px;
     margin-bottom: 50px;
+    background-image: url(https://images.pexels.com/photos/5184961/pexels-photo-5184961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+
 }
 
 .form__labelText {
@@ -45,6 +50,7 @@ body {
     display: inline-block;
     padding: 10px;
     margin: 10px;
+    text-align: left;
 }
 
 .form__legend {
@@ -52,6 +58,7 @@ body {
     background-color: white;
     font-family: "franklin", sans-serif;
     text-align: center;
+    border-radius: 20px;
     box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px teal, 21px 22px 40px 0px rgba(0, 0, 0, 0);
     ;
     padding: 10px;
