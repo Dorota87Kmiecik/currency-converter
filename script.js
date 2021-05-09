@@ -13,11 +13,15 @@
         const exchangeElement = document.querySelector(".js-exchange");
         const exchange = exchangeElement.value;
         const euro = zloty / exchange;
-        const euroElement = document.querySelector(".js-strong");
-        const addParagraph = document.querySelector(".js-addParagraph")
-        euroElement.innerText = euro.toFixed(2);
-        addParagraph.innerText = (euro > 100) ? "Kup sobie cos fajnego" : "Pozyczyc Ci sianko?"
+        addText(euro)
     };
+    const addText = (euro) => {
+        const euroElement = document.querySelector(".js-strong");
+        euroElement.innerText = euro.toFixed(2);
+        const addParagraph = document.querySelector(".js-addParagraph")
+        addParagraph.innerText = euro > 100 ? "Kup sobie cos fajnego" : "Pozyczyc Ci sianko?"
+    }
+
 
     init();
 };
