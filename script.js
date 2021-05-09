@@ -1,15 +1,23 @@
-let zlotyElement = document.querySelector(".js-money");
-let exchangeElement = document.querySelector(".js-exchange");
-let formElement = document.querySelector(".js-form");
-let euroElement = document.querySelector(".js-strong");
-let addParagraph = document.querySelector(".js-addParagraph")
+{
+    const init = () => {
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
-    let zloty = zlotyElement.value;
-    let exchange = exchangeElement.value;
-    let euro = zloty / exchange;
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", calculate);
 
-    euroElement.innerText = euro.toFixed(2);
-    addParagraph.innerText = (euro > 100) ? "Kup sobie cos fajnego" : "Pozyczyc Ci sianko?"
-});
+    }
+
+    const calculate = (event) => {
+        event.preventDefault();
+        const zlotyElement = document.querySelector(".js-money");
+        const zloty = zlotyElement.value;
+        const exchangeElement = document.querySelector(".js-exchange");
+        const exchange = exchangeElement.value;
+        const euro = zloty / exchange;
+        const euroElement = document.querySelector(".js-strong");
+        const addParagraph = document.querySelector(".js-addParagraph")
+        euroElement.innerText = euro.toFixed(2);
+        addParagraph.innerText = (euro > 100) ? "Kup sobie cos fajnego" : "Pozyczyc Ci sianko?"
+    };
+
+    init();
+};

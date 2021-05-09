@@ -32,6 +32,15 @@ body {
     font-weight: bold;
 }
 
+.form__money {
+    font-family: "franklin", sans-serif;
+}
+
+.form__exchange {
+    font-family: "franklin", sans-serif;
+}
+
+
 .form__fieldset {
     border-color: teal;
     text-align: center;
