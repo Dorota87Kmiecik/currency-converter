@@ -1,5 +1,5 @@
 # currency-converter
-## Demo: [Converter](https://dorota87kmiecik.github.io/currency-converter/[Converter])
+## Demo: [Converter](https://dorota87kmiecik.github.io/currency-converter/)
 
 ## On this page are used the basics 
 - JS
