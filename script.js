@@ -5,16 +5,25 @@
         const zloty = zlotyElement.value;
         const exchangeElement = document.querySelector(".js-exchange");
         const exchange = exchangeElement.value;
-        const euro = zloty / exchange;
-        addText(euro)
+        const USDRate = 3.33
+        const EuroRate = 4.5
+        switch (exchange) {
+            case "USD":
+                result = zloty / USDRate;
+                break;
+            case "EUR":
+                result = zloty / EuroRate;
+                break
+        };
+        addText(result)
     }
 
-    const addText = (euro) => {
+    const addText = (result) => {
 
         const euroElement = document.querySelector(".js-strong");
-        euroElement.innerText = euro.toFixed(2);
+        euroElement.innerText = result.toFixed(2);
         const addParagraph = document.querySelector(".js-addParagraph")
-        addParagraph.innerText = euro > 100 ? "Kup sobie cos fajnego" : "Pozyczyc Ci sianko?"
+        addParagraph.innerText = result > 100 ? "Kup sobie cos fajnego" : "Pozyczyc Ci sianko?"
     }
 
     const onFormSubmit = (event) => {
@@ -30,4 +39,4 @@
     }
 
     init();
-};
+};;

@@ -34,10 +34,19 @@ body {
 
 .form__money {
     font-family: "franklin", sans-serif;
+    border-radius: 20px;
+    padding: 5px 30px;
+    width: 80%;
+    color: teal;
 }
 
 .form__exchange {
     font-family: "franklin", sans-serif;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 30px;
+    background: teal;
+    width: 80%
 }
 
 
@@ -75,13 +84,19 @@ body {
 
 .form__submit {
     border: none;
-    background-color: teal;
+    background-color: darkred;
     border-radius: 20px;
     color: white;
     padding: 20px 60px;
     display: block;
     margin: 10px auto;
     font-size: 30px;
+    width: 50%;
+}
+
+.form__submit:hover {
+    background-color: hsl(0, 100%, 47%);
+
 }
 
 .paragraph {
