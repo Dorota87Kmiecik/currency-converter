@@ -1,6 +1,6 @@
 {
 
-    const calculate = () => {
+    const calculateResult = () => {
         const zlotyElement = document.querySelector(".js-money");
         const zloty = zlotyElement.value;
         const exchangeElement = document.querySelector(".js-exchange");
@@ -28,7 +28,7 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        calculate()
+        calculateResult()
     };
 
     const init = () => {
