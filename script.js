@@ -9,13 +9,15 @@
         const EuroRate = 4.5
         switch (exchange) {
             case "USD":
-                result = zloty / USDRate;
+                return zloty / USDRate;
+
                 break;
             case "EUR":
-                result = zloty / EuroRate;
+                return zloty / EuroRate;
+
                 break
         };
-        addText(result)
+
     }
 
     const addText = (result) => {
@@ -28,7 +30,10 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        calculateResult()
+        calculateResult();
+        const result = calculateResult();
+        addText(result);
+
     };
 
     const init = () => {
