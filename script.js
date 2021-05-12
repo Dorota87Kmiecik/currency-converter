@@ -28,12 +28,11 @@
         addParagraph.innerText = result > 100 ? "Kup sobie cos fajnego" : "Pozyczyc Ci sianko?"
     }
 
+
     const onFormSubmit = (event) => {
         event.preventDefault();
-        calculateResult();
         const result = calculateResult();
         addText(result);
-
     };
 
     const init = () => {
