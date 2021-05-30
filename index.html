@@ -26,8 +26,7 @@
                 <label class="form__labelText" for="money">Podaj zlotowki</label>
                 <input class="form__money js-money" id=money type="number" min="0.01" required autofocus step="0.01">
                 <label class="form__labelText" for="exchange">Kurs walutowy</label>
-                <select class="form__exchange js-exchange" id=exchange type="number" min="0.01" required autofocus
-                    step="0.01">
+                <select class="form__exchange js-exchange" id=exchange required>
                     <option value="EUR">Euro</option>
                     <option value="USD">Dolar</option>
                 </select>
@@ -36,7 +35,7 @@
         </form>
 
         <p class="container__paragraph">Masz dokladnie: <strong
-                class="container__paragraph--strong js-strong">0</strong> Euro</p>
+                class="container__paragraph--strong js-strong">0</strong></p>
         <p class="container__paragraph js-addParagraph"></p>
     </section>
 </body>

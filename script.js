@@ -23,7 +23,7 @@
     const addText = (result) => {
 
         const euroElement = document.querySelector(".js-strong");
-        euroElement.innerText = result.toFixed(2);
+        euroElement.innerText = `${result.toFixed(2)} ${exchange.value}`;
         const addParagraph = document.querySelector(".js-addParagraph")
         addParagraph.innerText = result > 100 ? "Kup sobie cos fajnego" : "Pozyczyc Ci sianko?"
     }
